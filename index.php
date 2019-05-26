@@ -24,7 +24,7 @@
     <header class="site-header">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-4 site-logo" data-aos="fade"><a href="index.html"><em></em></a></div>
+          <div class="col-4 site-logo" data-aos="fade"><a href="index.php"><em></em></a></div>
           <div class="col-8">
 
 
