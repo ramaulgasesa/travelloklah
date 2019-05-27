@@ -88,7 +88,7 @@
     <!-- END section -->
 
     
-    <section class="section bg-primary contact-section">
+    <section class="section bg-success contact-section">
       <div class="container">
         <div class="row">
           <div class="col-md-7">
@@ -119,7 +119,7 @@
               </div>
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="submit" value="Send Message" class="btn btn-primary">
+                  <input type="submit" value="Send Message" class="btn btn-dark">
                 </div>
               </div>
             </form>

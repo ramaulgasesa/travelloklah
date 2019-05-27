@@ -201,8 +201,6 @@
       </div>
     </section> -->
     <!-- END section -->
-
-        	<?php include"testimonial.php";?>
           
           <!-- END col -->
         </div>
