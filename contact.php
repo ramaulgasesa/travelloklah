@@ -96,11 +96,11 @@
             <form action="#" method="post" class="bg-white p-md-5 p-4 mb-5" style="margin-top: -150px;">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <label for="name">Name</label>
+                  <label for="name">Nama</label>
                   <input type="text" id="name" class="form-control ">
                 </div>
                 <div class="col-md-6 form-group">
-                  <label for="phone">Phone</label>
+                  <label for="phone">Telepon</label>
                   <input type="text" id="phone" class="form-control ">
                 </div>
               </div>
@@ -113,13 +113,13 @@
               </div>
               <div class="row">
                 <div class="col-md-12 form-group">
-                  <label for="message">Write Message</label>
+                  <label for="message">Tulis Pesan</label>
                   <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="submit" value="Send Message" class="btn btn-dark">
+                  <input type="submit" value="Kirim Pesan" class="btn btn-dark">
                 </div>
               </div>
             </form>
@@ -128,9 +128,9 @@
           <div class="col-md-5">
             <div class="row">
               <div class="col-md-10 ml-auto contact-info">
-                <p><span class="d-block">Address:</span> <span> 98 West 21th Street, Suite 721 New York NY 10016</span></p>
-                <p><span class="d-block">Phone:</span> <span> (+1) 435 3533</span></p>
-                <p><span class="d-block">Email:</span> <span> info@yourdomain.com</span></p>
+                <p><span class="d-block">Alamat:</span> <span> Sambas, Indonesia</span></p>
+                <p><span class="d-block">Telepon:</span> <span> (+1) 435 3533</span></p>
+                <p><span class="d-block">Email:</span> <span> info@travelloklah.com</span></p>
               </div>
             </div>
           </div>

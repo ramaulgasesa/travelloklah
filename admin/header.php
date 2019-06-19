@@ -60,9 +60,6 @@ include('cek-login.php');
                                     <li>
                                         <a tabindex="-1" href="kontak.php">Kontak</a>
                                     </li>
-                                    <li>
-                                        <a tabindex="-1" href="slide.php">Slide</a>
-                                    </li>
                                 </ul>
                             </li>
                             <li class="dropdown">

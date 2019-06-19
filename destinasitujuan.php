@@ -189,24 +189,24 @@ $data  = mysql_fetch_array(mysql_query("select * from destinasi where kodewst='$
               ...
               <form method="POST">
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Nama</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="masukan nama" name="nama">
+                <label for="nama">Nama</label>
+                <input type="text" class="form-control" id="nama" placeholder="masukan nama" name="nama">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Telp/WhatsApp</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="masukan kontak"name="kontak">
+                <label for="telp">Telp/WhatsApp</label>
+                <input type="text" class="form-control" id="telp" placeholder="masukan kontak"name="kontak">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Asal Kota</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="masukan asal kota" name="asal">
+                <label for="asal">Asal Kota</label>
+                <input type="text" class="form-control" id="asal" placeholder="masukan asal kota" name="asal">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect1">Kategori Peserta</label>
-                <select class="form-control" id="exampleFormControlSelect1" name="kategori">
+                <label for="kategori">Kategori Peserta</label>
+                <select class="form-control" id="kategori" name="kategori">
                   <option>-kategori-</option>
                   <option>Keluarga</option>
                   <option>Perusahaan</option>
@@ -216,16 +216,20 @@ $data  = mysql_fetch_array(mysql_query("select * from destinasi where kodewst='$
                 </select>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Jumlah</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="masukan jumlah" name="jumlah">
+                <label for="jumlah">Jumlah</label>
+                <input type="text" class="form-control" id="jumlah" placeholder="masukan jumlah" name="jumlah">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Jadwal</label>
-                <input type="date" class="form-control" id="exampleFormControlInput1">
+                <label for="jadwal">Jadwal</label>
+                <input type="date" class="form-control" id="jadwal" name="jadwal">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlTextarea1">Keterangan</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="keterangan"></textarea>
+                <label for="keterangan">Keterangan</label>
+                <textarea class="form-control" id="keterangan" rows="3" name="keterangan"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="kodewst">Kode Wisata</label>
+                <input type="text" class="form-control" id="kodewst" value=<?php echo "$kodewst"?> name="kodewst">
               </div>
             </div>
             <div class="modal-footer">
@@ -245,9 +249,11 @@ $data  = mysql_fetch_array(mysql_query("select * from destinasi where kodewst='$
     $asal = $_POST['asal'];
     $kategori = $_POST['kategori'];
     $jumlah = $_POST['jumlah'];
+    $jadwal = $_POST['jadwal'];
     $keterangan = $_POST['keterangan'];
+    $kodewst = $_POST['kodewst'];
     
-    mysql_query("INSERT INTO form VALUES ('','$nama','$email','$telp_wa','$asal','$kategori','$jumlah','$keterangan')")or die(mysql_error());
+    mysql_query("INSERT INTO form VALUES ('','$nama','$email','$telp_wa','$asal','$kategori','$jumlah','$jadwal','$keterangan','$kodewst')")or die(mysql_error());
 
     }
     ?>

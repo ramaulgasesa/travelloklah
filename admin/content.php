@@ -1,7 +1,7 @@
                             <!-- block -->
                             <div class="block">
                                 <div class="navbar navbar-inner block-header">
-                                    <div class="muted pull-left">Users</div>
+                                    <div class="muted pull-left">Pesanan</div>
                                     <div class="pull-right"><span class="badge badge-info">1,234</span>
 
                                     </div>
@@ -11,19 +11,28 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>First Name</th>
-                                                <th>Last Name</th>
-                                                <th>Username</th>
+                                                <th>Nama</th>
+                                                <th>Telepon</th>
+                                                <th>Jadwal</th>
+                                                <th>Kode wisata</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                        <?php
+                                            include "config.php";
+                                            $No = 1;
+                                            $sql = mysql_query("SELECT * FROM form");
+                                            while ($frm = mysql_fetch_array($sql)) {
+                                        ?>
                                             <tr>
-                                                <td>1</td>
-                                                <td>Mark</td>
-                                                <td>Otto</td>
-                                                <td>@mdo</td>
+                                                <td></td>
+                                                <td><?php echo "$frm[1]"?></td>
+                                                <td><?php echo "$frm[3]"?></td>
+                                                <td><?php echo "$frm[7]"?></td>
+                                                <td><?php echo "$frm[9]"?></td>
                                             </tr>
-                                            <tr>
+                                        <?php } ?>
+                                            <!-- <tr>
                                                 <td>2</td>
                                                 <td>Jacob</td>
                                                 <td>Thornton</td>
@@ -34,7 +43,7 @@
                                                 <td>Vincent</td>
                                                 <td>Gabriel</td>
                                                 <td>@gabrielva</td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>
@@ -45,7 +54,7 @@
                             <!-- block -->
                             <div class="block">
                                 <div class="navbar navbar-inner block-header">
-                                    <div class="muted pull-left">Orders</div>
+                                    <div class="muted pull-left">Destinasi</div>
                                     <div class="pull-right"><span class="badge badge-info">752</span>
 
                                     </div>
@@ -55,30 +64,25 @@
                                         <thead>
                                             <tr>
                                                 <th>#</th>
-                                                <th>Product</th>
-                                                <th>Date</th>
-                                                <th>Amount</th>
+                                                <th>Kode wisata</th>
+                                                <th>Nama Paket</th>
+                                                <th>Harga</th>
                                             </tr>
                                         </thead>
                                         <tbody>
+                                        <?php
+                                            include "config.php";
+                                            $No = 1;
+                                            $sql = mysql_query("SELECT * FROM destinasi");
+                                            while ($dst = mysql_fetch_array($sql)) {
+                                        ?>
                                             <tr>
-                                                <td>1</td>
-                                                <td>Coat</td>
-                                                <td>02/02/2013</td>
-                                                <td>$25.12</td>
+                                                <td></td>
+                                                <td><?php echo "$dst[0]"?></td>
+                                                <td><?php echo "$dst[1]"?></td>
+                                                <td><?php echo "$dst[3]"?></td>
                                             </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Jacket</td>
-                                                <td>01/02/2013</td>
-                                                <td>$335.00</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Shoes</td>
-                                                <td>01/02/2013</td>
-                                                <td>$29.99</td>
-                                            </tr>
+                                        <?php } ?>
                                         </tbody>
                                     </table>
                                 </div>
