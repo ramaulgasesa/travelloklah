@@ -1,4 +1,28 @@
 <?php
+ include 'config.php';
+ session_start();
+ if (isset($_POST['login'])) 
+ {
+  $username = mysql_real_escape_string($_POST['username']);
+  $password = md5($_POST['password']);
+  $sql = mysql_query("SELECT * FROM user WHERE username = '$username' AND password = '$password' ");
+  $data = mysql_fetch_assoc($sql);
+  if (mysql_num_rows($sql) == 1)
+  {
+   $_SESSION['username'] = $data['username'];
+   header("location: index.php");
+  }else
+  {
+   ?>
+   <script type="text/javascript">
+    alert("Username atau password salah!");
+    window.location.href = 'login.php';
+   </script>
+   <?php
+  }
+ }
+?>
+
 include('config.php');
  
 session_start();

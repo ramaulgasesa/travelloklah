@@ -7,11 +7,14 @@ include('cek-login.php');
     <head>
         <title>Dashboard Admin</title>
         <!-- Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
         <link href="js/jquery.easy-pie-chart.css" rel="stylesheet" media="screen">
         <link href="assets/styles.css" rel="stylesheet" media="screen">
         <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
     </head>
     
     <body>
@@ -113,14 +116,15 @@ include('cek-login.php');
             </div>
             <hr>
             <footer>
-                <p>&copy; Shop 2013</p>
+                <p>&copy; TRAVELLOKLAH 2019</p>
             </footer>
         </div>
         <!--/.fluid-container-->
-        <script src="js/jquery-1.9.1.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
         <script src="js/jquery.easy-pie-chart.js"></script>
         <script src="assets/scripts.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
         <script>
         $(function() {
             // Easy pie charts

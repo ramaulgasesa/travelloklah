@@ -174,3 +174,8 @@
                                 </div>
                             </div>
                             <!-- /block -->
+                            <script type="text/javascript">
+                                $(document).ready(function() {
+                                    $('table').DataTable();
+                                } );
+                            </script>

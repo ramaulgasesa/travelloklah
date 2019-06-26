@@ -1,14 +1,7 @@
 <?php
-
-	$host = 'localhost';
-	$user = 'root';
-	$pass = 'ramaul99';
-
-	$dbname = 'travelloklah'; 
-	//mengubung ke host
-	$connect = mysql_connect($host, $user, $pass, $dbname) or die(mysql_error());
-	 
-	//memilih database yang akan digunakan
-	$dbselect = mysql_select_db($dbname);
-
+date_default_timezone_set("Asia/Jakarta");
+// session_start();
+$db = mysql_connect("sql106.epizy.com", "epiz_24083681", "KAzTZmPmMmpB","epiz_24083681_travelloklah") or die("Gagal");
+if(!$db)die("no db");
+if(!mysql_select_db("epiz_24083681_travelloklah",$db))die("Tidak ada database");
 ?>
